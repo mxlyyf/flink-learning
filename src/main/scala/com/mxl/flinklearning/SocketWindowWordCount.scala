@@ -33,7 +33,7 @@ object SocketWindowWordCount {
       .keyBy(0)
       .sum(1)
 
-    counts.print().setParallelism(2)
+    counts.print("Socket Window WordCount Streaming...").setParallelism(2)
 
     env.execute
 
